@@ -1,1 +1,63 @@
-*{ margin: 0; }
+/* CSS PAGE AUTO */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* KEYFRAMES */
+@keyframes load {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* PRE-LOAD */
+.pre {
+  width: 80px;
+  height: 80px;
+  background-image: url("./img/load.png");
+  background-position: center;
+  background-size: contain;
+  animation: load 2s infinite linear;
+}
+
+.box-load {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.content {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.content p {
+  margin-top: 1rem;
+}
+
+.content h2 {
+  margin-top: 2rem;
+}
+
+.conteudo {
+  padding: 1.3rem;
+  background-color: #c9c6d4;
+}
+
+.conteudo2 {
+  padding: 1.3rem;
+  background-color: #999999;
+}

@@ -15,13 +15,13 @@ As tarefas deste conteúdo serão feitas diretamente pelo GitHub e/ou localmente
 
 ## Observação
 
-> Já vinha estudando CSS a um tempo considerável, porém na época não tinha noção de Git/Github e por isso o repositório foi criado somente agora, porém tenho tudo anotado no bloco de notas localmente.
+- Já vinha estudando CSS a um tempo considerável, porém na época não tinha noção de Git/Github e por isso o repositório foi criado somente agora, porém tenho tudo anotado no bloco de notas localmente.
 
-> Projeto realizado (pre-load) através do YouTube no canal "IlustraCode - Programação Web":
+- Projeto realizado (pre-load) através do YouTube no canal "IlustraCode - Programação Web":
 
-  Tecnologias:
-    - HTML5
-    - CSS3
-    - Javascript
+  **TECH STACK**:
+    > HTML5
+    > CSS3
+    > Javascript
     
     Créditos: https://youtu.be/1WpoqviwrPM
