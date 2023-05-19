@@ -20,8 +20,8 @@ As tarefas deste conteúdo serão feitas diretamente pelo GitHub e/ou localmente
 - Projeto realizado (pre-load) através do YouTube no canal "IlustraCode - Programação Web":
 
   **TECH STACK**:
-    > HTML5
-    > CSS3
-    > Javascript
+    `HTML5`
+    `CSS3`
+    `Javascript`
     
-    Créditos: https://youtu.be/1WpoqviwrPM
+    Créditos: [Criando PRELOAD com CSS e Javascript (Pré-carregamento) | ilustraCode](https://youtu.be/1WpoqviwrPM)
