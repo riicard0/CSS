@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.title{
+	background-color: black;
+}
+
+.title h1{
+	padding: 10px;
+	margin: 0px auto 30px auto;
+	text-align: center;
+	color: white;
+}
+
+.container{
+	border: 3px solid blue;
+	margin: 8px 8px 50px 8px;
+	gap: 8px;
+
+	display: grid;
+}
+
+/* #################### Exemplo 1 #################### */
+
+.container1{
+	grid-template-columns: 100px 100px 100px;
+	/* Acima, teremos três colunas com a dimensão especificada */
+}
+
+.container1 .item{
+	background-color: green;
+	color: white;
+}
+
+/* #################### Exemplo 2 #################### */
+
+.container2{
+	grid-template-columns: 2fr 1fr 1fr 1fr;
+	/* Acima, teremos quatro colunas sobre frações */
+}
+
+.container2 .item{
+	background-color: red;
+	color: white;
+}
+
+/* #################### Exemplo 3 #################### */
+
+.container3{
+	grid-template-columns: minmax(0, 1fr) minmax(400px, 1fr);
+	/* Acima, teremos duas colunas com especificação de mínimo e máxima para cada coluna, seja a dimensão sendo pixel ou fração  */
+}
+
+.container3 .item{
+	background-color: blue;
+	color: white;
+}
+
+/* #################### Exemplo 4 #################### */
+
+.container4{
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	/* Acima, teremos o "auto-fit" que basicamente encaixa as colunas conforme o tamanho da tela, após ele especificamos um "minmax" que somente aí então com uma dimensão da tela reduzida, o "auto-fit" quebrará nossos colunas para próxima linha pelo mínimo especificado no "minmax" */
+}
+
+.container4 .item{
+	background-color: black;
+	color: white;
+}
+
+/* #################### Exemplo 5#################### */
+
+.container5{
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	/* Acima, teremos o "repeat" falando que somente terão quatro colunas, determinada pelas especificações do "minmax" */
+
+	/*grid-template-columns: repeat(4, minmax(200px, 1fr)); */
+	/* Lembrando que o valor mínimo do "minmax" tem que ser zero, pois se tiver algum outro valor acima disso, exemplo "200px", quando a dimensão dos "containers" for menor que "200px" o "repeat" não quebrará para linha de baixo e isso quebrará o layout, passando para fora do especificado, ainda contendo as quatro colunas */
+}
+
+.container5 .item{
+	background-color: antiquewhite;
+	color: black;
+}
+
+/* #################### Exemplo 6 #################### */
+
+.container6{
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	/* Acima, teremos o "auto-fill" que automaticamente preencherá o espaço, parece bastante com o "auto-fit", porém ao ter a dimensão da tela maior do que o especificado, ele criará espaço em branco */
+}
+
+.container6 .item{
+	background-color: brown;
+	color: white;
+}
+
+/* #################### Exemplo 7 #################### */
+
+.container7{
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+	grid-template-rows: auto 200px;
+	/* Acima, teremos o "grid-template-rows" especificando que todos os itens da segunda linha terão "200px" ao serem quebradas com a dimensão da tela reduzida */
+
+	/* grid-template-rows: auto 200px 200px; */
+	/* Acima, teremos ele especificando que todos os itens da segunda e terceira linha terão "200px" */
+}
+
+.container7 .item{
+	background-color: beige;
+	color: black;
+}
+
+/* #################### Exemplo 8 #################### */
+
+.container8{
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+	grid-auto-rows: 100px;
+	/* Acima, teremos o "grid-auto-rows" que especificará que todos as linhas, nesse exemplo, terão a "100px" */
+}
+
+.container8 .item{
+	background-color: blueviolet;
+	color: black;
+}
+
+
+/* #################### Exemplo 9 #################### */
+
+.container9{
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+
+	.container9 .item{
+		background-color: burlywood;
+		color: black;
+	}
+
+@media screen and (max-width: 720px){
+
+	.container9{
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+}
+
+@media screen and (max-width: 520px){
+
+	.container9{
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+}
+/* Acima, teremos um exemplo utilizando variados dimensões para responsividades diferentes */

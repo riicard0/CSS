@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Grid Layout</title>
+
+		<link rel="stylesheet" type="text/css" href="./style.css">
+	</head>
+	<body>
+		<div class="title">
+			<h1>GRID LAYOUT LESSONS</h1>
+		</div>
+
+		<!-- Abaixo, deixei assim para melhor exemplificação -->
+		
+		<h2>Exemplo 1 = grid-template-columns: 100px 100px 100px;</h2>
+		<div class=" container container1">
+			<div class="item item-1">Item 1</div>
+			<div class="item item-2">Item 2</div>
+			<div class="item item-3">Item 3</div>
+			<div class="item item-4">Item 4</div>
+			<div class="item item-5">Item 5</div>
+			<div class="item item-6">Item 6</div>
+		</div>
+
+		<h2>Exemplo 2 = grid-template-columns: 2fr 1fr 1fr 1fr;</h2>
+		<div class="container container2">
+			<div class="item item-1">Item 1</div>
+			<div class="item item-2">Item 2</div>
+			<div class="item item-3">Item 3</div>
+			<div class="item item-4">Item 4</div>
+			<div class="item item-5">Item 5</div>
+			<div class="item item-6">Item 6</div>
+		</div>
+
+		<h2>Exemplo 3 = grid-template-columns: minmax(0, 1fr) minmax(400px, 1fr);</h2>
+		<div class="container container3">
+			<div class="item item-1">Item 1</div>
+			<div class="item item-2">Item 2</div>
+			<div class="item item-3">Item 3</div>
+			<div class="item item-4">Item 4</div>
+			<div class="item item-5">Item 5</div>
+			<div class="item item-6">Item 6</div>
+		</div>
+
+		<h2>Exemplo 4 = grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</h2>
+		<div class="container container4">
+			<div class="item item-1">Item 1</div>
+			<div class="item item-2">Item 2</div>
+			<div class="item item-3">Item 3</div>
+			<div class="item item-4">Item 4</div>
+			<div class="item item-5">Item 5</div>
+			<div class="item item-6">Item 6</div>
+		</div>
+
+		<h2>Exemplo 5 = grid-template-columns: repeat(4, minmax(0, 1fr));</h2>
+		<div class="container container5">
+			<div class="item item-1">Item 1</div>
+			<div class="item item-2">Item 2</div>
+			<div class="item item-3">Item 3</div>
+			<div class="item item-4">Item 4</div>
+			<div class="item item-5">Item 5</div>
+			<div class="item item-6">Item 6</div>
+		</div>
+
+		<h2>Exemplo 6 = grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));</h2>
+		<div class="container container6">
+			<div class="item item-1">Item 1</div>
+			<div class="item item-2">Item 2</div>
+			<div class="item item-3">Item 3</div>
+			<div class="item item-4">Item 4</div>
+			<div class="item item-5">Item 5</div>
+			<div class="item item-6">Item 6</div>
+		</div>
+
+		<h2>Exemplo 7 =	grid-template-rows: auto 200px;</h2>
+		<div class="container container7">
+			<div class="item item-1">Item 1</div>
+			<div class="item item-2">Item 2</div>
+			<div class="item item-3">Item 3</div>
+			<div class="item item-4">Item 4</div>
+			<div class="item item-5">Item 5</div>
+			<div class="item item-6">Item 6</div>
+		</div>
+
+		<h2>Exemplo 8 =	grid-auto-rows: 100px;</h2>
+		<div class="container container8">
+			<div class="item item-1">Item 1</div>
+			<div class="item item-2">Item 2</div>
+			<div class="item item-3">Item 3</div>
+			<div class="item item-4">Item 4</div>
+			<div class="item item-5">Item 5</div>
+			<div class="item item-6">Item 6</div>
+		</div>
+
+		<h2>Exemplo 9 = </h2>
+		<h2>@media screen and (max-width: 720px)</h2>
+		<h2>@media screen and (max-width: 520px)</h2>
+		<div class="container container9">
+			<div class="item item-1">Item 1</div>
+			<div class="item item-2">Item 2</div>
+			<div class="item item-3">Item 3</div>
+			<div class="item item-4">Item 4</div>
+			<div class="item item-5">Item 5</div>
+			<div class="item item-6">Item 6</div>
+		</div>
+
+		<!-- Fonte: https://www.youtube.com/watch?v=Aql4FvOKcho&list=WL&index=7 -->
+
+	</body>
+</html>
